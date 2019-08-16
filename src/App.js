@@ -10,14 +10,14 @@ import Total from './components/Total';
 const App = (props) => {
 
   console.log('App Props:', props);
-  const { state, removeFeture, buyFeature } = props;
+  const { state, removeFeature, buyFeature } = props;
 
 
   return (
     <div className="boxes">
       <div className="box">
         <Header car={state.car} />
-        <AddedFeatures car={state.car} />
+        <AddedFeatures car={state.car} removeFeature={removeFeature} />
       </div>
       <div className="box">
         <AdditionalFeatures store={state.store} buyFeature={buyFeature}/>
