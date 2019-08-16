@@ -1,5 +1,4 @@
-
-export const initialState = {
+const initialState = {
     additionalPrice: 0,
     car: {
       price: 26395,
@@ -16,9 +15,12 @@ export const initialState = {
     ]
   };
 
-  export const reducer = (state, action) => {
+
+const reducer = (state, action) => {
       switch(action.type) {
         default:
-            return statement;
+            return state;
       }
   };
+
+export default reducer;
